@@ -5,5 +5,5 @@
 
 <?php
 include('way2sms-api.php');
-sendWay2SMS(enter your regitered number,'enter your way2sms password',$_REQUEST['phone'],$_REQUEST['msg']);
+sendWay2SMS(9869868616,'rushi',$_REQUEST['phone'],$_REQUEST['msg']);
 ?>
