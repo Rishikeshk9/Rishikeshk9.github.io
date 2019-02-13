@@ -27,6 +27,27 @@
             
         }
     
+          body, html {
+  height: 100%;
+}
+
+.parallax { 
+  
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        
+        @font-face {
+  font-family: league;
+  src: url('assets/fonts/league.otf');
+}
+        
     </style>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,7 +56,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-106612371-2');
 </script>
 
@@ -114,46 +134,32 @@
     </div>
   </nav>
   <!-- Navbar -->
-    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <div class="view parallax"  style="background-image: url('me.JPG'); background-repeat: no-repeat; background-size: cover;">
 
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                  <sup><i class="fas fa-quote-left quote white-text"></i></sup><strong >  Hello World </strong><sup><i class="fas fa-quote-right quote white-text"></i></sup>  
+           
+            <div class="text-center white-text mx-4 wow fadeIn" style=" margin: 17%;" >
+              <h3 class="mb-4 text-right"style="  font-family: league;font-style: italic; margin-right: 17% ">
+                  <span style="color: #ffc400">Hey,</span> I'm 
+              </h4>
+                
+                <h1 class="mb-4 text-right"style="  font-family: league;font-style: bold;margin-right: 17% ">
+                  Rushikesh Kardile
               </h1>
 
-              <p class=" d-none d-md-block">
-                <strong>Want to Hire Me?</strong>
+              <p class="mb-4 text-right" style="  font-family: league;font-style: bold;margin-right:17% ">
+                <strong style="color: #ffc400;font-size: 120%">Freelance Developer based in Pune</strong>
               </p>
-
-              <p class="mb-4 wow fadeIn">
-                  <strong>I'm a pro: Developer, Graphics Designer & an Engineer housing a processor and OS that of a humanoid</strong> <i class="fab fa-android"></i>
-              </p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-                <p class="mb-4 wow fadeIn">
-                  <strong>You can check out my Achievements & an in short glimpse of my work</strong>
-              </p>
-
-                  
-            </div>
+ 
+ 
             <!-- Content -->
 
-          </div>
+           
           <!-- Mask & flexbox options-->
 
         </div>
        <!--/First slide-->
 
-  
+    </div>
 
   <!--Main layout-->
   <main>
@@ -177,19 +183,19 @@
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">I can talk in :</h3>
+            <h3 class="h3 mb-3">I can code in :</h3>
               
               <table class="table">
      
     <tbody>
       <tr>
-          <td><p> <strong>C</strong></p></td>
+          <td><p> <strong>C/C++</strong></p></td>
           <td><p> <strong>C#</strong></p></td>
-          <td><p> <strong>C++</strong></p></td>
-          <td><p> <strong>CSS <i class="fab fa-css3-alt blue-text"></i></strong></p></td>         
+           <td><p> <strong>CSS <i class="fab fa-css3-alt blue-text"></i></strong></p></td>
+                    <td><p> <strong>HTML <i class="fab fa-html5 orange-text"></i></strong></p></td>
+
       </tr>
         <tr>
-            <td><p> <strong>HTML <i class="fab fa-html5 orange-text"></i></strong></p></td>
           <td><p> <strong>Java <i class="fab fa-js yellow-text"></i></strong></p></td>
           <td><p> <strong>PHP <i class="fab fa-php purple-text"></i></strong></p></td>
           <td><p> <strong>Python <i class="fab fa-python blue-text"></i></strong></p></td>
@@ -610,7 +616,6 @@
                </div>
               <div class="col-10 mb-2">
                 <!-- Put this code anywhere in the body of your page where you want the badge to show up. 
-
 <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
      <a itemprop='url' href=https://www.fiverr.com/rishikeshk9 rel="nofollow" target="_blank" style='display: inline-block;'>
         <div class='fiverr-seller-content' id='fiverr-seller-widget-content-9ee23d76-41eb-4d77-a276-cac6829bc0c4' itemprop='contentURL' style='display: none;'></div>
@@ -620,12 +625,10 @@
             <div itemprop='jobtitle'>Seller</div>
             <div itemprop='description'>Hi there this is Rushikesh, I have been always interested in technical & innovative kind of stuff. I love Designing Logos, 2D/3D Game Characters  I even develop Android Applications as well as Websites using Bootstrap, PHP, JS.
 I have already worked with multiple brands & firms and surely they seem satisfied with my work.
-
 </div>
         </div>
     </a>
 </div>
-
 <script id='fiverr-seller-widget-script-9ee23d76-41eb-4d77-a276-cac6829bc0c4' src='https://widgets.fiverr.com/api/v1/seller/rishikeshk9?widget_id=9ee23d76-41eb-4d77-a276-cac6829bc0c4' data-config='{"category_name":"\n                                    Graphics \u0026 Design\n\n                            "}' async='true' defer='true'></script>-->
 
               </div>
@@ -781,13 +784,13 @@ I have already worked with multiple brands & firms and surely they seem satisfie
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://rishikeshk9.github.io/js/jquery-3.2.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="https://rishikeshk9.github.io/js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://rishikeshk9.github.io/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://rishikeshk9.github.io/js/mdb.min.js"></script>
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
   <!-- Initializations -->
