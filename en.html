@@ -27,26 +27,285 @@
             
         }
     
-          body, html {
-  height: 100%;
+        body, html {
+        height: 100%;
+        background: #000000;
+            color: white;
 }
+        
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+ 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+ * {
+  box-sizing: border-box;
+}
+
+        
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+ 
+. 
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.greens {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+ 
+.heading {
+    color: #eee;
+    text-transform: uppercase;
+    font-family: league;
+}
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+}
+
+.skills {
+  width: 80%;
+  max-width: 960px;
+  height: 780px;
+  margin: auto;
+  position: relative;
+}
+
+.lines {
+  height: 100%;
+  position: relative;
+}
+
+.line {
+  height: inherit;
+  width: 2px;
+  position: absolute;
+  background: rgba(238, 238, 238, 0.6);
+}
+.line.l--0 {
+  left: 0;
+}
+.line.l--25 {
+  left: 25%;
+}
+.line.l--50 {
+  left: 50%;
+}
+.line.l--75 {
+  left: 75%;
+}
+.line.l--100 {
+  left: calc(100% - 1px);
+}
+
+.line__label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+}
+.line__label.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.chart {
+  margin: 30px 0 0;
+}
+.chart:first-child {
+  margin: 0;
+}
+
+.chart__title {
+  display: block;
+  margin: 0 0 10px;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--prod .chart__title {
+  animation-delay: 3.3s;
+}
+.chart--design .chart__title {
+  animation-delay: 4.5s;
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+
+.chart__bar {
+  height: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #4cb8c4, #3cd3ad);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--dev .chart__bar:nth-of-type(11) {
+  animation-delay: 2.7s;
+}
+.chart--dev .chart__bar:nth-of-type(10) {
+  animation-delay: 2.5s;
+}
+.chart--dev .chart__bar:nth-of-type(9) {
+  animation-delay: 2.3s;
+}
+.chart--dev .chart__bar:nth-of-type(8) {
+  animation-delay: 2.1s;
+}
+.chart--dev .chart__bar:nth-of-type(7) {
+  animation-delay: 1.9s;
+}
+.chart--dev .chart__bar:nth-of-type(6) {
+  animation-delay: 1.7s;
+}
+.chart--dev .chart__bar:nth-of-type(5) {
+  animation-delay: 1.5s;
+}
+.chart--dev .chart__bar:nth-of-type(4) {
+  animation-delay: 1.3s;
+}
+.chart--dev .chart__bar:nth-of-type(3) {
+  animation-delay: 1.1s;
+}
+.chart--dev .chart__bar:nth-of-type(2) {
+  animation-delay: 0.9s;
+}
+.chart--dev .chart__bar:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.chart--prod .chart__bar:nth-of-type(2) {
+  animation-delay: 4.2s;
+}
+.chart--prod .chart__bar:nth-of-type(1) {
+  animation-delay: 4s;
+}
+.chart--design .chart__bar:nth-of-type(3) {
+  animation-delay: 5.6s;
+}
+.chart--design .chart__bar:nth-of-type(2) {
+  animation-delay: 5.4s;
+}
+.chart--design .chart__bar:nth-of-type(1) {
+  animation-delay: 5.2s;
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+}
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .parallax { 
   
-  /* Full height */
-  height: 100%; 
+        /* Full height */
+        height: 100%; 
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('images/mee.jpg'); 
+      
+
+}  
+        @media(min-width: 1080px) parallax {
+    background: url('me.png');
 }
         
         @font-face {
   font-family: league;
-  src: url('league.otf');
+  src: url('assets/fonts/league.otf');
 }
+       
         
     </style>
     
@@ -134,35 +393,44 @@
     </div>
   </nav>
   <!-- Navbar -->
-    <div class="view parallax"  style="background-image: url('me.JPG'); background-repeat: no-repeat; background-size: cover;">
+    <div class="view parallax"  >
 
            
-            <div class="text-center white-text mx-4 wow fadeIn" style=" margin: 17%;" >
-              <h3 class="mb-4 text-right"style="  font-family: league;font-style: italic; margin-right: 17% ">
-                  <span style="color: #ffc400">Hey,</span> I'm 
-              </h4>
-                
-                <h1 class="mb-4 text-right"style="  font-family: league;font-style: bold;margin-right: 17% ">
+            <div class="text-center white-text mx-4 wow fadeIn" style=" margin: 17%; " >
+              <h3 class="mb-4 text-center"style="  font-family: league; ">
+                   <div class="text" >
+   
+  <p style=" margin-left:  7%;">
+    <span class="word wisteria" >Hello,</span>
+    <span class="word greens">Hey,</span>
+    <span class="word belize">Namaste,</span>
+    <span class="word pomegranate">Hola,</span>
+    <span class="word greens">Bonjour,</span>
+      <span class="word midnight">Hallo,</span><br>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span   style="font-style: normal; margin-left: 0.8%">I'm 
+              
+               
+        
+                <br>
+                <span class="mb-4 text-center"style=" font-size: 150%; font-family: league;font-style: bold;margin-left: 33.5%; ">
                   Rushikesh Kardile
-              </h1>
-
-              <p class="mb-4 text-right" style="  font-family: league;font-style: bold;margin-right:17% ">
-                <strong style="color: #ffc400;font-size: 120%">Freelance Developer based in Pune</strong>
-              </p>
+              </span>
+                       
+              <span class="mb-4 text-center" style="  font-family: league;font-style: bold;margin-left:34.5% ">
+                <strong style="color: #ffc400;font-size: 78%;">Freelance Developer based in Pune</strong>
+              </span>
  
- 
-            <!-- Content -->
-
-           
-          <!-- Mask & flexbox options-->
-
+ </span> 
+  </p>
+</div> 
+</h3>
+         
         </div>
-       <!--/First slide-->
-
+       <!--/First slide--> 
     </div>
 
   <!--Main layout-->
   <main>
+      
      <div id="me" class="container">
 
       <!--Section: Main info-->
@@ -171,12 +439,7 @@
         <!--Grid row-->
         <div class="row">
 
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://rishikeshk9.github.io/img/programming-quiz.png" class="img-fluid z-depth-1-half" alt="">
-
-          </div>
+         
           <!--Grid column-->
 
           <!--Grid column-->
@@ -184,26 +447,135 @@
 
             <!-- Main heading -->
             <h3 class="h3 mb-3">I can code in :</h3>
-              
-              <table class="table">
-     
-    <tbody>
-      <tr>
-          <td><p> <strong>C/C++</strong></p></td>
-          <td><p> <strong>C#</strong></p></td>
-           <td><p> <strong>CSS <i class="fab fa-css3-alt blue-text"></i></strong></p></td>
-                    <td><p> <strong>HTML <i class="fab fa-html5 orange-text"></i></strong></p></td>
-
-      </tr>
-        <tr>
-          <td><p> <strong>Java <i class="fab fa-js yellow-text"></i></strong></p></td>
-          <td><p> <strong>PHP <i class="fab fa-php purple-text"></i></strong></p></td>
-          <td><p> <strong>Python <i class="fab fa-python blue-text"></i></strong></p></td>
-        
-        
-        </tr>
-    </tbody>
-  </table>
+              <div class="skills">
+  <ul class="lines">
+    <li class="line l--0">
+      <span class="line__label title">
+        Skill level:
+      </span>
+    </li>
+    <li class="line l--25">
+      <span class="line__label">
+        The basics
+      </span>
+    </li>
+    <li class="line l--50">
+      <span class="line__label">
+        Advanced
+      </span>
+    </li>
+    <li class="line l--75">
+      <span class="line__label">
+        Seasoned
+      </span>
+    </li>
+    <li class="line l--100">
+      <span class="line__label">
+        Expert
+      </span>
+    </li>
+  </ul>
+  
+  <div class="charts">
+    <div class="chart chart--dev">
+      <span class="chart__title">Development</span>
+      <ul class="chart--horiz">
+        <li class="chart__bar" style="width: 98%;">
+          <span class="chart__label">
+            HTML5
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 98%;">
+          <span class="chart__label">
+            CSS3 & SCSS
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 70%;">
+          <span class="chart__label">
+            JavaScript
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 40%;">
+          <span class="chart__label">
+            AngularJS
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 40%;">
+          <span class="chart__label">
+            ReactJS
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 60%;">
+          <span class="chart__label">
+            jQuery
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 55%;">
+          <span class="chart__label">
+            NodeJS
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 50%;">
+          <span class="chart__label">
+            Grunt / Gulp / Webpack
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 40%;">
+          <span class="chart__label">
+            .NET
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 60%;">
+          <span class="chart__label">
+            Umbraco
+          </span>
+        </li>
+        <li class="chart__bar" style="width: 60%;">
+          <span class="chart__label">
+            Sitecore
+          </span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="chart chart--prod">
+      <span class="chart__title">Productivity</span>
+      <ul class="chart--horiz">
+      <li class="chart__bar" style="width: 75%;">
+        <span class="chart__label">
+          Git + Github, Bitbucket & Sourcetree
+        </span>
+      </li>
+      <li class="chart__bar" style="width: 80%;">
+        <span class="chart__label">
+          Microsoft Office
+        </span>
+      </li>
+    </ul>
+    </div>
+    
+    <div class="chart chart--design">
+      <span class="chart__title">Design</span>
+      <ul class="chart--horiz">
+      <li class="chart__bar" style="width: 45%;">
+        <span class="chart__label">
+          Photoshop
+        </span>
+      </li>
+      <li class="chart__bar" style="width: 35%;">
+        <span class="chart__label">
+          Illustrator
+        </span>
+      </li>
+      <li class="chart__bar" style="width: 60%;">
+        <span class="chart__label">
+          User Experience
+        </span>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>
             
 
           </div>
@@ -781,7 +1153,6 @@ I have already worked with multiple brands & firms and surely they seem satisfie
 
   </footer>
   <!--/.Footer-->
-
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="https://rishikeshk9.github.io/js/jquery-3.2.1.min.js"></script>
@@ -792,6 +1163,161 @@ I have already worked with multiple brands & firms and surely they seem satisfie
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://rishikeshk9.github.io/js/mdb.min.js"></script>
     
+<script type="text/javascript"> 
+    var resolver = {
+  resolve: function resolve(options, callback) {
+    // The string to resolve
+    var resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
+    var combinedOptions = Object.assign({}, options, { resolveString: resolveString });
+
+    function getRandomInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    function randomCharacter(characters) {
+      return characters[getRandomInteger(0, characters.length - 1)];
+    };
+
+    function doRandomiserEffect(options, callback) {
+      var characters = options.characters;
+      var timeout = options.timeout;
+      var element = options.element;
+      var partialString = options.partialString;
+
+      var iterations = options.iterations;
+
+      setTimeout(function () {
+        if (iterations >= 0) {
+          var nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
+
+          // Ensures partialString without the random character as the final state.
+          if (iterations === 0) {
+            element.textContent = partialString;
+          } else {
+            // Replaces the last character of partialString with a random character
+            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+          }
+
+          doRandomiserEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      }, options.timeout);
+    };
+
+    function doResolverEffect(options, callback) {
+      var resolveString = options.resolveString;
+      var characters = options.characters;
+      var offset = options.offset;
+      var partialString = resolveString.substring(0, offset);
+      var combinedOptions = Object.assign({}, options, { partialString: partialString });
+
+      doRandomiserEffect(combinedOptions, function () {
+        var nextOptions = Object.assign({}, options, { offset: offset + 1 });
+
+        if (offset <= resolveString.length) {
+          doResolverEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      });
+    };
+
+    doResolverEffect(combinedOptions, callback);
+  }
+
+
+  /* Some GLaDOS quotes from Portal 2 chapter 9: The Part Where He Kills You
+     * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
+     */ };
+var strings = [
+'Get ready to turn your ideas into reality...'];
+
+
+
+var counter = 0;
+
+var options = {
+  // Initial position
+  offset: 0,
+  // Timeout between each random character
+  timeout: 5,
+  // Number of random characters to show
+  iterations: 20,
+  // Random characters to pick from
+  characters: [  '_',  ],
+  // String to resolve
+  resolveString: strings[counter],
+  // The element
+  element: document.querySelector('[data-target-resolver]')
+
+
+  // Callback function when resolve completes
+};function callback() {
+
+}
+
+resolver.resolve(options, callback);
+    
+</script>
+
+<script type="text/javascript">
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+</script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
   <!-- Initializations -->
   <script type="text/javascript">
