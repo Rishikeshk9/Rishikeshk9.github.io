@@ -118,12 +118,17 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('../mee.jpg'); 
-        @media screen(min-width: 480px) {
-    background-image: url('../me.jpg');
-
-}  
         
-        }
+}  
+
+@media screen and (max-width: 480px) {
+  .parallax {
+    background-image: url('../../me.png');
+  
+    }
+  }
+        
+        
         
         @font-face {
   font-family: league;
