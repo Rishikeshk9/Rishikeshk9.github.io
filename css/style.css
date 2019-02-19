@@ -187,7 +187,7 @@ p {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('mee.jpg'); 
+        background-image: url('../mee.jpg'); 
         
 }  
 @media screen and (max-width: 480px) {
@@ -198,7 +198,7 @@ p {
 }
         @font-face {
   font-family: league;
-  src: url('league.otf');
+  src: url('../league.otf');
 }
 	   
 
