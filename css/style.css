@@ -200,8 +200,23 @@ p {
   font-family: league;
   src: url('../league.otf');
 }
+
+        @font-face {
+  font-family: nickainley;
+  src: url('../nickainley.ttf');
+}
+        @font-face {
+  font-family: halo;
+  src: url('../halo.otf');
+}
 	   
 
+.nick
+{ 
+    margin: auto;
+    font-family: halo;
+    font-size: 55px;
+}
  
 
 
