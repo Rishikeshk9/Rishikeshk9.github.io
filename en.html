@@ -246,13 +246,13 @@
                         <div class="row m-5  " >
                              
                               <div class="column">
-                                  <img src="images/tagged.png" style="margin: 20px;">
+                                  <img src="tagged.png" style="margin: 20px;">
                                  <img src="https://rishikeshk9.github.io/img/fastFingers.png" style="max-height: 150px; max-width: 300px;margin: 20px;">
                                 <img src="https://rishikeshk9.github.io/img/colorex.png" style="max-height: 150px; max-width: 300px;margin: 20px;">
                                 <img src="https://rishikeshk9.github.io/img/cryptoLive.jpg" style="max-height: 150px; max-width: 300px;margin: 20px;">
-                                <img src="images/colorcity.png" style="max-height: 150px; max-width: 300px;margin: 20px;border-style: solid;
+                                <img src="colorcity.png" style="max-height: 150px; max-width: 300px;margin: 20px;border-style: solid;
   border-width: 2px 2px 2px 2px;border-color: gainsboro">
-                                <img src="images/library.png" style="max-height: 150px; max-width: 300px;margin: 20px;">
+                                <img src="library.png" style="max-height: 150px; max-width: 300px;margin: 20px;">
                                 
                                   <img src="https://Rishikeshk9.github.io/img/zbrush_document234.jpg" style="max-height: 150px; max-width: 300px;margin: 20px;bottom: 20px;">
                                   
@@ -334,6 +334,15 @@ $(document).ready(function(){
          $('.maindata').fadeIn(1000);
     }, 2500);
     
+    
+    $('.mainbag').viewScroller({
+	useScrollbar: true, // Use scrollbar to change views
+	useKeyboard:true, 
+        changeWhenAnim: false, // Change views when they are changing
+	loopMainViews: true, // Change horizontal views (mainviews) in loop mode
+	loopSubViews: true	// Change vertical views (subviews) in loop mode
+});
+
 });
 
 </script>
