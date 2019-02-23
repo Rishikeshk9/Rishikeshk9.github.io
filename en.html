@@ -271,13 +271,20 @@
 
                 <h4 class="nick"><span style="color: gainsboro;">  
                 <i class="fas fa-quote-left"></i></span>  Hey! I have worked on more than 50 static &amp; dynamic Applications <span style="color: gainsboro;"><i class="fas fa-quote-right"></i></span> </h4>   
-
+                <div class="lottie"></div>
     
             </div>           
+               </div>  
+        <div class=" black">
+         <div class="container text-white" style="font-family: league">
 
-           </div>  
+        Copyright: <a>Rushikeshkardile.de</a>
+
+        </div>
+        </div>    
+        
     </div
-  </div>   
+</div>   
     
 <div class="wrapper">
   <div class="loader">
@@ -288,23 +295,21 @@
     <div></div>
     <div></div>
     <div></div>
-    <div></div>
+    <div></div> 
     <div></div>
   </div>
 </div>
     
-    
-    <footer>
-    
-    Copyright: <a>Rushikeshkardile.de</a>
-    
-    </footer>
+  
     
     </body>
+    
+   
     </html>
     
   <!--/.Footer-->
   <!-- SCRIPTS -->
+    
   <!-- JQuery -->
   <script type="text/javascript" src="https://rishikeshk9.github.io/js/jquery-3.2.1.min.js"></script>
 
@@ -315,17 +320,22 @@
   <script type="text/javascript" src="https://rishikeshk9.github.io/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://rishikeshk9.github.io/js/mdb.min.js"></script>
-  
-<script src="assets/viewscroller/viewScroller.js"></script>
-<script src="assets/viewscroller/jquery.easing.min.js"></script>
-<script src="assets/viewscroller/jquery.mousewheel.min.js"></script>
-  
-
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 
 $(document).ready(function(){
 
+    var animation = bodymovin.loadAnimation({
+  container: document.getElementById('lottie'), // Required
+  path: 'data.json', // Required
+  renderer: 'svg/canvas/html', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  name: "Hello World", // Name for future reference. Optional.
+})
+    
     $('maindata').hide();
   // Fakes the loading setting a timeout
     setTimeout(function() {
