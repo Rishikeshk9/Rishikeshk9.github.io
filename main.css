@@ -210,8 +210,16 @@ p {
   src: url('https://rishikeshk9.github.io/halo.otf');
 }
 	   
+@font-face {
+  font-family: elianto;
+  src: url('https://rishikeshk9.github.io/elianto.ttf');
+}
+	   
 
- 
+ h1
+{
+    font-family: elianto;
+}
 .nick
 { 
     margin: auto;
