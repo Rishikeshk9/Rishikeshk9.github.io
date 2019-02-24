@@ -281,7 +281,7 @@
     
     
            <div class="white">
-                <h1 id="projects" class="mt-5">About</h1>
+                <h1 id="projects" class="m-5">About</h1>
                 <div class="icon" ></div>
 
 
@@ -307,6 +307,15 @@
                                     <div style="width: 50%; background: #00000000;margin: auto" id="responsive"></div>
                                   
                                   <p>My layouts will work on any device, big or small.</p>
+                                  
+                               </div> 
+                            
+                            <div class="col-md-3 center">
+                                  
+                                    <h2>Intuitive</h2>
+                                    <div style="width: 50%; background: #00000000;margin: auto" id="ux"></div>
+                                  
+                                  <p>Strong preference for easy to use, intuitive UX/UI.</p>
                                   
                                </div> 
                         </div>
@@ -446,7 +455,15 @@ $(document).ready(function(){
   renderer: 'svg', // Required
   loop: true, // Optional
   autoplay: true, // Optional
-  name: "car", // Name for future reference. Optional.
+  name: "resp", // Name for future reference. Optional.
+})
+    var animation4 = bodymovin.loadAnimation({
+  container: document.getElementById('responsive'), // Required
+  path: 'ux.json', // Required
+  renderer: 'svg', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  name: "ux", // Name for future reference. Optional.
 })
     
     $('maindata').hide();
