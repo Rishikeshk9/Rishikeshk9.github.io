@@ -426,7 +426,16 @@ $(document).ready(function(){
   name: "Hello World", // Name for future reference. Optional.
 })
     
-    $('maindata').hide();
+    var animation2 = bodymovin.loadAnimation({
+  container: document.getElementById('car'), // Required
+  path: 'car.json', // Required
+  renderer: 'svg', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  name: "car", // Name for future reference. Optional.
+})
+    
+    $('.maindata').hide();
   // Fakes the loading setting a timeout
     setTimeout(function() {
         $('.wrapper').fadeOut(100);
