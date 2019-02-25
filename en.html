@@ -318,6 +318,15 @@
                                   <p>Strong preference for easy to use, intuitive UX/UI.</p>
                                   
                                </div> 
+                            
+                            <div class="col-lg-3 center">
+                                  
+                                    
+                                    <div style="width: 50%; background: #00000000;margin: auto" id="lock"></div>
+                                  <h2>Secure</h2>
+                                  <p>A thorough security test is done for any Vulnerabilities.</p>
+                                  
+                               </div> 
                         </div>
                         <!--Grid row-->
                         
@@ -464,6 +473,15 @@ $(document).ready(function(){
   loop: true, // Optional
   autoplay: true, // Optional
   name: "ux", // Name for future reference. Optional.
+})
+    
+    var animation4 = bodymovin.loadAnimation({
+  container: document.getElementById('lock'), // Required
+  path: 'lock.json', // Required
+  renderer: 'svg', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  name: "lock", // Name for future reference. Optional.
 })
     
     $('maindata').hide();
