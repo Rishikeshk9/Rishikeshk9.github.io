@@ -64,11 +64,15 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #555; }
 
-h1, h2, h3, h4, h5, h6 {
+ h4 {
   font-family: "Heebo", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+color: rgba(255, 255, 255, 0.1);
+}
+ 
+    
 
 button:focus {
   outline: none;
@@ -2551,9 +2555,9 @@ h6 {
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area {
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+  background-image: -moz-linear-gradient(0deg, #212121 0%, #111111 100%);
+  background-image: -webkit-linear-gradient(0deg, #212121 0%, #111111 100%);
+  background-image: -ms-linear-gradient(0deg, #212121 0%, #111111 100%); }
 
 .tabs_inner .nav.nav-tabs {
   display: block;
@@ -2570,7 +2574,7 @@ h6 {
       padding: 0px 40px;
       font-size: 13px;
       font-weight: 500;
-      color: #fff;
+      color: darkgray;
       font-family: "Roboto", sans-serif;
       border: 1px solid #9ab5f5;
       background: rgba(255, 255, 255, 0.1); }

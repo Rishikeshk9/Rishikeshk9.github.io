@@ -230,6 +230,15 @@ p {
     margin: auto;
     font-family: halo;
     font-size: 55px;
+    
+    font-style: normal;
+    font-weight: normal;
+}
+.halo
+{ 
+    margin: auto;
+    font-family: league;
+    font-size: 25px;
 }
 
 	/*
